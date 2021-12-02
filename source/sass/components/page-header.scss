@@ -2,9 +2,12 @@
   padding-top: 10px;
   padding-bottom: 17px;
   background: $white;
+  &--catalog {
+    border-bottom: 1px solid $gray;
+  }
 }
 
-.page-header__container{
+.page-header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,5 +19,3 @@
   justify-content: space-between;
   align-items: center;
 }
-
-

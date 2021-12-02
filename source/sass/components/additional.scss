@@ -1,0 +1,45 @@
+.additional {
+}
+
+.additional__heading {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  color: $black;
+  margin-bottom: 36px;
+}
+
+.additional__name {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $very-dark-gray;
+}
+
+.additional__number {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: $dark-gray;
+}
+
+.additional__price {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: $dark-gray;
+  text-align: right;
+}
+
+.additional__button {
+  border: none;
+  background: $green;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 10px 109px;
+  color: $white;
+}
