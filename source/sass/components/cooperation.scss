@@ -1,5 +1,9 @@
-.cooperation__container {
+.cooperation{
+  &--color{
+    background: $gray;
+  }
 }
+
 .cooperation__heading {
   margin: 0;
   padding: 0;
@@ -8,12 +12,14 @@
   margin-left: 2px;
   font-weight: normal;
 }
+
 .cooperation__address {
   width: 139px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: $dark-gray;
+
   &--street {
     margin: 0;
     padding: 0;

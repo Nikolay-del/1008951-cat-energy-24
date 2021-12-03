@@ -3,6 +3,7 @@
   padding-bottom: 40px;
   background: #eaeaea;
 }
+
 .example__heading {
   margin: 0;
   padding: 0;
@@ -11,6 +12,7 @@
   line-height: 40px;
   margin-bottom: 40px;
 }
+
 .example__text {
   padding: 0;
   margin: 0;
@@ -21,6 +23,7 @@
   width: 280px;
   margin-bottom: 35px;
 }
+
 .example__list {
   margin: 0;
   padding: 0;
@@ -29,12 +32,14 @@
   margin: 0 -16px;
   margin-bottom: 20px;
 }
+
 .example__item {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 16px;
 }
+
 .example__number {
   margin: 0;
   padding: 0;
@@ -45,6 +50,7 @@
   font-weight: normal;
   margin-bottom: 8px;
 }
+
 .example__description {
   margin: 0;
   padding: 0;
@@ -54,6 +60,7 @@
   text-align: center;
   width: 77px;
 }
+
 .example__costs {
   margin: 0;
   padding: 0;
@@ -63,8 +70,6 @@
   margin-bottom: 40px;
 }
 
-.slider__actions {
-}
 .slider__button {
   margin: 0;
   padding: 0;
@@ -73,6 +78,7 @@
   font-size: 16px;
   line-height: 20px;
 }
+
 .slider__images {
   margin-bottom: 15px;
   &--after {
