@@ -11,7 +11,7 @@
 
 <body>
   <header class="page-header">
-    <div class="page-header__container">
+    <div class="page-header__container container">
       <a class="page-header__logo">
         <svg xmlns="http://www.w3.org/2000/svg" width="34" height="38" viewBox="0 0 34 38" fill="none"
           class="page-header__logo--image">
@@ -110,34 +110,35 @@
   </header>
   <main class="page-main">
     <section class="promo">
-      <div class="promo__container">
+      <div class="promo__container container">
         <h1 class="promo__heading">Функциональное питание для котов</h1>
         <p class="promo__text">Занялся собой? Займись котом!</p>
         <img src="img/package-mobile.png" alt="Упаковка корма 'Cat Energy Pro'">
         <button class="promo__button">Подобрать программу</button>
       </div>
     </section>
-    <section class="program container">
-      <h2 class="visually-hidden">Выбор рациона питания</h2>
-      <ul class="program__list">
-        <li class="program__item">
-          <h3 class="program__heading">Похудение</h3>
-          <p class="program__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на
-            диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <hr class="program__line">
-          <a href="" class="program__link">Каталог Slim</a>
-        </li>
-        <li class="program__item">
-          <h3 class="program__heading">Набор массы</h3>
-          <p class="program__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет
-            вашему коту нарастить необходимые мышцы!</p>
-          <hr class="program__line">
-          <a href="" class="program__link">Каталог Pro</a>
-        </li>
-      </ul>
+    <section class="program">
+      <div class="container">
+        <h2 class="visually-hidden">Выбор рациона питания</h2>
+        <ul class="program__list">
+          <li class="program__item">
+            <h3 class="program__heading">Похудение</h3>
+            <p class="program__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на
+              диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a href="" class="program__link">Каталог Slim</a>
+          </li>
+          <li class="program__item">
+            <h3 class="program__heading">Набор массы</h3>
+            <p class="program__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
+              поможет
+              вашему коту нарастить необходимые мышцы!</p>
+            <a href="" class="program__link">Каталог Pro</a>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="advantages">
-      <div class="advantages__container">
+      <div class="advantages__container container">
         <h2 class="advantages__heading">Как это работает</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
@@ -257,18 +258,18 @@
       </p>
       <div class="slider__images">
         <img src="img/before-mobile.png" alt="Кот до функционального питания 'Cat Energy'"
-          class="slider__images--before">
+          class="slider__images--before" width="280" height="232">
         <img src="img/after-mobile.png" alt="Кот после функционального питания 'Cat Energy'"
-          class="slider__images--after">
+          class="slider__images--after" width="280" height="232">
       </div>
       <div class="slider__actions">
         <button class="slider__button slider__button-before" type="button">Было</button>
-        <input type="range" min="1" max="3" id="before-after">
+        <input type="range" min="1" max="3" id="before-after" class="slider__input">
         <button class="slider__button slider__button-after" type="button">Стало</button>
       </div>
     </section>
     <section class="cooperation">
-      <div class="cooperation__container">
+      <div class="cooperation__container container">
         <h3 class="cooperation__heading">Приглашаем к сотрудничеству дилеров!</h3>
         <div class="cooperation__address">
           <p class="cooperation__address--street">ул. Большая Конюшенная, д. 19/8</p>
@@ -279,7 +280,7 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__container">
+    <div class="container">
       <a class="page-footer__logo">
         <svg xmlns="http://www.w3.org/2000/svg" width="128" height="24" viewBox="0 0 128 24" fill="none">
           <g clip-path="url(#clip0_135_3260)">
@@ -317,7 +318,6 @@
           </defs>
         </svg>
       </a>
-      <hr class="page-footer__line">
       <ul class="page-footer__social-media">
         <li class="page-footer__item">
           <a href="#" class="page-footer__link">
@@ -350,7 +350,6 @@
           </a>
         </li>
       </ul>
-      <hr class="page-footer__line">
       <a href="htmlacademy.ru" class="page-footer__copyright">
         <span class="page-footer__copyright--text">HTML Academy</span>
         <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 27 34" fill="none">

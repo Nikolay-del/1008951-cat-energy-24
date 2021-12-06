@@ -30,16 +30,6 @@
 }
 
 .catalog__name {
-  &--more {
-    margin: 0;
-    padding: 0;
-    text-transform: uppercase;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: normal;
-    color: $very-dark-gray;
-    margin-bottom: 8px;
-  }
   margin: 0;
   padding: 0;
   text-transform: uppercase;
@@ -47,7 +37,17 @@
   line-height: 20px;
   font-weight: normal;
   color: $very-dark-gray;
-  width: 76px;
+}
+
+.catalog__name--more {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  color: $very-dark-gray;
+  margin-bottom: 8px;
 }
 
 .catalog__button {
@@ -80,7 +80,6 @@
 
 .catalog__tr {
   display: flex;
-  width: 138px;
   justify-content: space-between;
 }
 
