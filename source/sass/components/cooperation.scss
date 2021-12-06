@@ -1,7 +1,5 @@
-.cooperation {
-  &--color {
-    background: $gray;
-  }
+.cooperation--color {
+  background: $gray;
 }
 
 .cooperation__heading {
@@ -18,13 +16,14 @@
   font-size: 14px;
   line-height: 20px;
   color: $dark-gray;
+}
 
-  &--street {
-    margin: 0;
-    padding: 0;
-  }
-  &--city {
-    margin: 0;
-    padding: 0;
-  }
+.cooperation__address--street {
+  margin: 0;
+  padding: 0;
+}
+
+.cooperation__address--city {
+  margin: 0;
+  padding: 0;
 }

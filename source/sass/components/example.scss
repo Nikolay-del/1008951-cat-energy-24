@@ -37,7 +37,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .example__number {
@@ -81,7 +80,8 @@
 
 .slider__images {
   margin-bottom: 15px;
-  &--after {
-    display: none;
-  }
+}
+
+.slider__images--after {
+  display: none;
 }
