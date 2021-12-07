@@ -1,1 +1,20 @@
-// Начните писать стили здесь
+@import "./global/variables.scss";
+@import "./global/fonts.scss";
+@import "./global/global.scss";
+@import "./components/page-header.scss";
+@import "./components/main-nav.scss";
+@import "./components/promo.scss";
+@import "./components/program.scss";
+@import "./components/advantages.scss";
+@import "./components/example.scss";
+@import "./components/cooperation.scss";
+@import "./components/page-footer.scss";
+@import "./components/catalog.scss";
+@import "./components/additional.scss";
+@import "./components/gift.scss";
+@import "./components/selection.scss";
+@import "./components/personal.scss";
+@import "./components/diet.scss";
+@import "./components/contacts.scss";
+@import "./components/comment.scss";
+@import "./components/form-additional.scss";

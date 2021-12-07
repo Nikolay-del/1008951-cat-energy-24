@@ -1,0 +1,29 @@
+.cooperation--color {
+  background: $gray;
+}
+
+.cooperation__heading {
+  margin: 0;
+  padding: 0;
+  width: 139px;
+  text-transform: uppercase;
+  margin-left: 2px;
+  font-weight: normal;
+}
+
+.cooperation__address {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: $dark-gray;
+}
+
+.cooperation__address--street {
+  margin: 0;
+  padding: 0;
+}
+
+.cooperation__address--city {
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,29 @@
+.comment {
+  padding-bottom: 23px;
+}
+
+.comment__heading {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 26px;
+  color: $black;
+  font-weight: normal;
+  margin-bottom: 37px;
+}
+
+.comment__textarea {
+  width: 280px;
+  height: 150px;
+  resize: none;
+  border: 1px solid #e7e7e7;
+
+  &::placeholder {
+    font-family: "Oswald", sans-serif;
+    padding-left: 15px;
+    padding-top: 10px;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+}
