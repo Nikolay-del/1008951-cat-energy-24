@@ -1,0 +1,37 @@
+.slider {
+  @media (min-width: $desktop-width) {
+    width: 591px;
+    flex-shrink: 0;
+  }
+}
+
+.slider__button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  background: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 1px dashed #b2b2b2;
+  }
+}
+
+.slider__images {
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+  }
+}
+
+.slider__images--after {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}

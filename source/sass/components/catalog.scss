@@ -19,6 +19,8 @@
   padding-top: 19px;
   border-top: 1px solid #ebebeb;
   padding-bottom: 24px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .catalog__image {
@@ -56,6 +58,8 @@
   padding: 10px 109px;
   color: $white;
   background: $green;
+  padding: 10px 0;
+  width: 100%;
 }
 
 .catalog__button--more {
