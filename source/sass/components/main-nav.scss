@@ -11,6 +11,7 @@
     line-height: 24px;
     margin: 0 -17px;
   }
+
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
@@ -39,6 +40,7 @@
     padding-bottom: 8px;
     border-bottom: 2px solid $green;
   }
+
   @media (min-width: $desktop-width) {
     border-bottom-color: $white;
   }
@@ -47,6 +49,7 @@
 .main-nav__link {
   text-decoration: none;
   color: $black;
+
   @media (min-width: $desktop-width) {
     color: $white;
   }

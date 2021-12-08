@@ -2,6 +2,7 @@
   padding-top: 39px;
   padding-bottom: 22px;
   background: $gray;
+
   @media (min-width: $tablet-width) {
     padding-top: 58px;
     padding-bottom: 55px;
@@ -46,9 +47,6 @@
 
 .page-footer__item {
   margin: 0 18px;
-
-  @media (min-width: $tablet-width) {
-  }
 }
 
 .page-footer__copyright {
