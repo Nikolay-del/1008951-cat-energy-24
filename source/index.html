@@ -9,7 +9,7 @@
   <title>Главная страница. Cat Energy</title>
 </head>
 
-<body>
+<body class="page__body">
   <header class="page-header">
     <div class="page-header__container container">
       <a class="page-header__logo">
@@ -99,11 +99,11 @@
           </svg>
         </button>
         <div class="main-nav__container">
-          <!-- <ul class="main-nav__list site-list">
-            <li class="main-nav_item main-nav_item--current"><a>Главная</a></li>
-            <li class="main-nav_item"><a href="catalog.html">Каталог продукции</a></li>
-            <li class="main-nav_item"><a href="form.html">Подбор программы</a></li>
-          </ul> -->
+          <ul class="main-nav__list site-list">
+            <li class="main-nav__item main-nav__item--current"><a class="main-nav__link">Главная</a></li>
+            <li class="main-nav__item"><a href="catalog.html" class="main-nav__link">Каталог продукции</a></li>
+            <li class="main-nav__item"><a href="form.html" class="main-nav__link">Подбор программы</a></li>
+          </ul>
         </div>
       </nav>
     </div>
@@ -113,7 +113,7 @@
       <div class="promo__container container">
         <h1 class="promo__heading">Функциональное питание для котов</h1>
         <p class="promo__text">Занялся собой? Займись котом!</p>
-        <img src="img/package-mobile.png" alt="Упаковка корма 'Cat Energy Pro'">
+        <img src="img/package-mobile.png" alt="Упаковка корма 'Cat Energy Pro'" class="promo__image">
         <button class="promo__button">Подобрать программу</button>
       </div>
     </section>
@@ -239,33 +239,43 @@
       </div>
     </section>
     <section class="example">
-      <h2 class="example__heading">Живой пример</h2>
-      <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-        Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов
-        в день. </p>
-      <ul class="example__list">
-        <li class="example__item">
-          <b class="example__number">5 кг</b>
-          <p class="example__description">снижение веса</p>
-        </li>
-        <li class="example__item">
-          <b class="example__number">60 дней</b>
-          <p class="example__description">затрачено времени</p>
-        </li>
-      </ul>
-      <p class="example__costs">Затраты на питание:
-        <span class="example__costs-sum">15 000 РУБ.</span>
-      </p>
-      <div class="slider__images">
-        <img src="img/before-mobile.png" alt="Кот до функционального питания 'Cat Energy'"
-          class="slider__images--before" width="280" height="232">
-        <img src="img/after-mobile.png" alt="Кот после функционального питания 'Cat Energy'"
-          class="slider__images--after" width="280" height="232">
-      </div>
-      <div class="slider__actions">
-        <button class="slider__button slider__button-before" type="button">Было</button>
-        <input type="range" min="1" max="3" id="before-after" class="slider__input">
-        <button class="slider__button slider__button-after" type="button">Стало</button>
+      <div class="example__container container">
+        <div class="example__wrapper">
+          <div class="example__options">
+            <h2 class="example__heading">Живой пример</h2>
+            <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+              Slim.
+              Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+              часов
+              в день. </p>
+            <ul class="example__list">
+              <li class="example__item">
+                <b class="example__number">5 кг</b>
+                <p class="example__description">снижение веса</p>
+              </li>
+              <li class="example__item">
+                <b class="example__number">60 дней</b>
+                <p class="example__description">затрачено времени</p>
+              </li>
+            </ul>
+            <p class="example__costs">Затраты на питание:
+              <span class="example__costs--sum">15 000 РУБ.</span>
+            </p>
+          </div>
+          <div class="slider">
+            <div class="slider__images">
+              <img src="img/before-mobile.png" alt="Кот до функционального питания 'Cat Energy'"
+                class="slider__images--before" width="280" height="232">
+              <img src="img/after-mobile.png" alt="Кот после функционального питания 'Cat Energy'"
+                class="slider__images--after" width="280" height="232">
+            </div>
+            <div class="slider__actions">
+              <button class="slider__button slider__button-before" type="button">Было</button>
+              <input type="range" min="1" max="3" id="before-after" class="slider__input">
+              <button class="slider__button slider__button-after" type="button">Стало</button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="cooperation">
@@ -280,7 +290,7 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="container">
+    <div class="page-footer__container container">
       <a class="page-footer__logo">
         <svg xmlns="http://www.w3.org/2000/svg" width="128" height="24" viewBox="0 0 128 24" fill="none">
           <g clip-path="url(#clip0_135_3260)">

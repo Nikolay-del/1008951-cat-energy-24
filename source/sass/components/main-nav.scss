@@ -1,9 +1,56 @@
 .main-nav__list {
-  display: flex;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 -17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .main-nav__toogle {
+  margin: 0;
+  padding: 0;
   background: none;
   border: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__item {
+  @media (min-width: $tablet-width) {
+    margin: 0 17px;
+  }
+}
+
+.main-nav__item--current {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 8px;
+    border-bottom: 2px solid $green;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom-color: $white;
+  }
+}
+
+.main-nav__link {
+  text-decoration: none;
+  color: $black;
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
 }

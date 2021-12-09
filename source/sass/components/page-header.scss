@@ -2,6 +2,15 @@
   padding-top: 10px;
   padding-bottom: 17px;
   background: $white;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 24px;
+    background: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 53px;
+  }
 }
 
 .page-header--catalog {
@@ -19,4 +28,12 @@
   width: 191px;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+  }
 }
