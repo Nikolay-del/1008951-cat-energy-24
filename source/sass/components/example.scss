@@ -128,7 +128,7 @@
     text-align: right;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     display: flex;
     text-align: left;
   }
@@ -146,6 +146,8 @@
 }
 
 .example__wrapper {
-  display: flex;
-  align-items: start;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: start;
+  }
 }
