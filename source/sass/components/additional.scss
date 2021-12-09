@@ -1,29 +1,69 @@
 .additional__heading {
   margin: 0;
   padding: 0;
+  margin-top: 25px;
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
   color: $black;
   margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 68px;
+    margin-bottom: 80px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 76px;
+  }
 }
 
 .additional__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
 }
 
 .additional__item {
   padding-top: 13px;
   padding-bottom: 19px;
   border-bottom: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 28px;
+    padding-top: 26px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .additional__options {
   display: flex;
   justify-content: space-between;
   margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 38px;
+  }
 }
 
 .additional__name {
@@ -35,6 +75,15 @@
   text-transform: uppercase;
   color: $very-dark-gray;
   margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
 }
 
 .additional__number {
@@ -44,6 +93,16 @@
   font-size: 14px;
   line-height: 14px;
   color: $dark-gray;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 112px;
+  }
 }
 
 .additional__price {
@@ -54,6 +113,14 @@
   line-height: 14px;
   color: $dark-gray;
   text-align: right;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
 }
 
 .additional__button {
@@ -63,6 +130,33 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  padding: 10px 109px;
+  padding: 10px 0;
+  width: 100%;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+  }
+}
+
+.additional__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
+}
+
+.additional__unite {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

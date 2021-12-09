@@ -10,10 +10,6 @@
 
 .cooperation--color {
   background: $gray;
-
-  @media (min-width: $tablet-width) {
-    background: none;
-  }
 }
 
 .cooperation__heading {
