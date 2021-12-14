@@ -61,13 +61,9 @@
   }
 }
 
-.page-footer--text {
+.page-footer__copyright--text {
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: $dark-gray;
-
-  @media (min-width: $tablet-width) {
-    margin-right: 22px;
-  }
 }

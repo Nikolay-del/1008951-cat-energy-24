@@ -28,9 +28,6 @@
     margin-top: 71px;
     margin-bottom: 76px;
   }
-
-  @media (min-width: $desktop-width) {
-  }
 }
 
 .contacts__list {
@@ -53,9 +50,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  @media (min-width: $desktop-width) {
-  }
 }
 
 .contacts__label {
@@ -87,9 +81,6 @@
     font-size: 20px;
     line-height: 30px;
     padding: 10px 0;
-  }
-
-  @media (min-width: $desktop-width) {
   }
 
   &::placeholder {

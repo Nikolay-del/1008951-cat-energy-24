@@ -54,13 +54,17 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form-additional__submit {
   @media (min-width: $tablet-width) {
     display: flex;
   }
-
 }
 
 .form-additional__button {
@@ -97,4 +101,9 @@
     font-size: 16px;
     line-height: 16px;
   }
+}
+
+.form-additional__item {
+  display: flex;
+  align-items: center;
 }
