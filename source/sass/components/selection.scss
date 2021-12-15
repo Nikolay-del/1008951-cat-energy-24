@@ -1,5 +1,14 @@
-.selection {
+.selection__form {
   padding-top: 27px;
+  margin-left: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 73px;
+  }
 }
 
 .selection__heading {
@@ -10,6 +19,16 @@
   line-height: 36px;
   color: $black;
   margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
 }
 
 .selection__text {
@@ -21,22 +40,20 @@
   color: $black;
   width: 226px;
   margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 83%;
+    margin-bottom: 66px;
+  }
 }
 
-.selection__button {
-  border: none;
-  background: $green;
-  text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  padding: 10px 76px;
-  color: $white;
-  margin-bottom: 21px;
-}
-
-.selection__surely {
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 16px;
+.selection__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin-bottom: 69px;
+  }
 }

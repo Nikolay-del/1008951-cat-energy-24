@@ -1,5 +1,13 @@
 .contacts {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
 }
 
 .contacts__heading {
@@ -9,19 +17,39 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 26px;
-  width: 187px;
+  width: 57%;
   margin-bottom: 35px;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 71px;
+    margin-bottom: 76px;
+  }
 }
 
 .contacts__list {
+  display: grid;
+  gap: 14px;
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .contacts__item {
-  margin-bottom: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .contacts__label {
@@ -30,16 +58,36 @@
   line-height: 18px;
   color: $dark-gray;
   margin-right: 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 20px;
+  }
 }
 
 .contacts__input {
-  width: 228px;
+  flex-grow: 1;
   padding: 13px 0;
   border: 1px solid #e7e7e7;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 0;
+  }
 
   &::placeholder {
-    font-family: "Oswald", sans-serif;
-    text-transform: uppercase;
     padding-left: 10px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 20px;
+    }
   }
 }

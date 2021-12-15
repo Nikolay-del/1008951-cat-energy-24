@@ -4,7 +4,23 @@
   padding-top: 28px;
   list-style-type: none;
   padding-bottom: 20px;
+  border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
+  margin-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 72px;
+    border: 1px solid #e7e7e7;
+    padding-left: 30px;
+    margin-left: 41px;
+    margin-right: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding-top: 25px;
+    padding-left: 28px;
+  }
 }
 
 .diet__label {
@@ -12,4 +28,9 @@
   font-size: 16px;
   line-height: 18px;
   color: $very-dark-gray;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

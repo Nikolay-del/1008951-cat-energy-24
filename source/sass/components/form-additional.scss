@@ -1,5 +1,10 @@
 .form-additional {
-  padding-bottom: 34px;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+    margin-right: 103px;
+  }
 }
 
 .form-additional__heading {
@@ -9,12 +14,34 @@
   font-size: 24px;
   line-height: 26px;
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 57px;
+  }
 }
 
 .form-additional__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: grid;
+  gap: 13px;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 123px;
+    column-gap: 32px;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 104px;
+    margin-bottom: 61px;
+  }
 }
 
 .form-additional__input {
@@ -27,4 +54,56 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form-additional__submit {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.form-additional__button {
+  border: none;
+  background: $green;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 0;
+  width: 100%;
+  color: $white;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 20px;
+    width: 43%;
+    margin-right: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 53%;
+    margin-right: 81px;
+  }
+}
+
+.form-additional__surely {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.form-additional__item {
+  display: flex;
+  align-items: center;
 }
