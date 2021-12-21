@@ -19,6 +19,18 @@
     line-height: 30px;
     border-bottom: 1px dashed #b2b2b2;
   }
+
+  &:hover {
+    @media (min-width: $tablet-width) {
+      border-bottom-style: solid;
+    }
+  }
+
+  &:focus {
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
+  }
 }
 
 .slider__images {

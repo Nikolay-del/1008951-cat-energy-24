@@ -42,12 +42,28 @@
   @media (min-width: $desktop-width) {
     color: $white;
   }
+
+  &:hover {
+    @media (min-width: $tablet-width) {
+      opacity: 0.6;
+    }
+  }
+
+  &:focus {
+    @media (min-width: $tablet-width) {
+      opacity: 0.3;
+    }
+  }
 }
 
 .main-nav__link--current {
   @media (min-width: $tablet-width) {
-    text-decoration: underline solid $white;
+    text-decoration: 2px underline solid $green;
     text-underline-offset: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-decoration-color: $white;
   }
 }
 

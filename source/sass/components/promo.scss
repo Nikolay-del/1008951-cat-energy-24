@@ -1,4 +1,5 @@
 .promo {
+  position: relative;
   text-align: center;
   margin-bottom: 20px;
   background: url("../img/promo.jpg") no-repeat;
@@ -11,7 +12,7 @@
     background-size: 709px 609px;
     margin: 0;
     padding-bottom: 526px;
-    background-position: center 260px;
+    background-position: center 352px;
   }
 
   @media (min-width: $desktop-width) {
@@ -94,6 +95,14 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 80px;
+  }
+
+  &:hover {
+    background: #5eaa2f;
+  }
+
+  &:focus {
+    color: rgba(255,255,255,0.3);
   }
 }
 
