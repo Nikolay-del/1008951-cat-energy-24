@@ -17,16 +17,46 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 26px;
-  width: 57%;
+  width: 80%;
   margin-bottom: 35px;
   color: $black;
+  position: relative;
+  background: $white;
+  display: inline-block;
+  padding-right: 22px;
+  padding-left: 20px;
+  margin-left: -20px;
+
+  &::after {
+    content: "";
+    height: 2px;
+    width: 100vw;
+    top: 30%;
+    left: 0;
+    background: $green;
+    position: absolute;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      top: 60%;
+      left: -36px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    width: auto;
     font-size: 36px;
     line-height: 36px;
     margin-top: 71px;
     margin-bottom: 76px;
+    padding-left: 36px;
+    padding-right: 36px;
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 40px;
+    margin-left: -40px;
   }
 }
 

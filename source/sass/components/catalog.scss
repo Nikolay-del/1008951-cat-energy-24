@@ -17,10 +17,12 @@
 }
 
 .catalog__products {
-  margin: 0;
-  padding: 0;
   list-style-type: none;
   display: grid;
+  border-bottom: 1px solid #ebebeb;
+  border-top: 1px solid #ebebeb;
+  margin: 0 -20px;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
@@ -35,8 +37,10 @@
 }
 
 .catalog__product {
+  padding: 0 20px;
+  margin: 0 -20px;
   padding-top: 19px;
-  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
   padding-bottom: 24px;
   display: flex;
   flex-wrap: wrap;
@@ -53,6 +57,12 @@
 }
 
 .catalog__product--more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 0 -20px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;

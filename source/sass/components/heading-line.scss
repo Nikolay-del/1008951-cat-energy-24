@@ -1,0 +1,23 @@
+.heading-line {
+  position: relative;
+  background: $white;
+  display: inline-block;
+  padding-right: 22px;
+  padding-left: 20px;
+  margin-left: -20px;
+
+  &::after {
+    content: "";
+    height: 2px;
+    width: 100vw;
+    top: 60%;
+    left: 0;
+    background: $green;
+    position: absolute;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      left: -36px;
+    }
+  }
+}
