@@ -28,6 +28,7 @@
 }
 
 .program__item {
+  position: relative;
   background: $gray;
   padding: 30px 20px 18px 20px;
 
@@ -40,11 +41,57 @@
   }
 }
 
+.program__icon {
+  position: absolute;
+}
+
+.program__icon--slimming {
+  top: 21px;
+  left: 22px;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 211px;
+    left: auto;
+    top: 81px;
+    right: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 106px;
+    right: 0;
+    top: 41px;
+    left: 52px;
+  }
+}
+
+.program__icon--weight {
+  top: 24px;
+  left: 13px;
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 200px;
+    left: auto;
+    top: 70px;
+    right: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 100px;
+    right: 0;
+    top: 47px;
+    left: 33px;
+  }
+}
+
 .program__heading {
   margin: 0;
   padding: 0;
   margin-bottom: 30px;
-  margin-left: 91px;
+  margin-left: 72px;
   font-weight: normal;
   font-size: 24px;
   line-height: 37px;
@@ -86,6 +133,7 @@
 }
 
 .program__link {
+  position: relative;
   color: $black;
   display: block;
   border-top: 1px solid #d9d9d9;
@@ -99,5 +147,39 @@
     border: none;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 12px;
+    background: url("../img/icon-arrow.svg") no-repeat;
+    left: 100px;
+    top: 17px;
+
+    @media (min-width: $tablet-width) {
+      left: 135px;
+      top: 23px;
+    }
+  }
+
+  &:hover::after {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 12px;
+    background: url("../img/icon-arrow-hover.svg") no-repeat;
+    left: 100px;
+    top: 17px;
+
+    @media (min-width: $tablet-width) {
+      left: 135px;
+      top: 23px;
+    }
+  }
+
+  &:focus {
+    opacity: 0.3;
   }
 }

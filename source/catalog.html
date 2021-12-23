@@ -90,22 +90,19 @@
           </defs>
         </svg>
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toogle" type="button" aria-label="Открыть меню">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
-            <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5" />
-            <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5" />
-            <line y1="17.25" x2="24" y2="17.25" stroke="black" stroke-width="1.5" />
-          </svg>
-        </button>
+      <nav class="main-nav main-nav--nojs main-nav--closed">
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         <div class="main-nav__container">
-          <ul class="main-nav__list site-list">
-            <li class="main-nav__item"><a class="main-nav__link main-nav__link--catalog" href="index.html">Главная</a>
+          <ul class="main-nav__list main-nav--nojs">
+            <li class="main-nav__item">
+              <a href="index.html" class="main-nav__link main-nav__link--catalog">Главная</a>
             </li>
-            <li class="main-nav__item"><a class="main-nav__link main-nav__link--current main-nav__link--catalog">Каталог
-                продукции</a></li>
-            <li class="main-nav__item"><a href="form.html" class="main-nav__link main-nav__link--catalog">Подбор
-                программы</a></li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--current main-nav__link--catalog">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html" class="main-nav__link main-nav__link--catalog">Подбор программы</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -355,14 +352,18 @@
       </div>
     </section>
     <section class="cooperation cooperation--color">
-      <div class="cooperation__container container">
-        <h3 class="cooperation__heading">Приглашаем к сотрудничеству дилеров!</h3>
-        <div class="cooperation__address">
-          <p class="cooperation__address--street">ул. Большая Конюшенная, д. 19/8</p>
-          <p class="cooperation__address--city">Санкт-Петербург</p>
+      <div class="container">
+        <div class="cooperation__container">
+          <h3 class="cooperation__heading">Приглашаем <br>к&nbsp;сотрудничеству <br> дилеров!</h3>
+          <div class="cooperation__address">
+            <p class="cooperation__address--street">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="cooperation__address--city">Санкт-Петербург</p>
+          </div>
         </div>
       </div>
-      <img src="img/map.jpg" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="362">
+      <iframe class="cooperation__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872586894!2d30.320853351872064!3d59.938716481787175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1640079649726!5m2!1sru!2sru"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
   </main>
   <footer class="page-footer">
@@ -446,6 +447,7 @@
       </a>
     </div>
   </footer>
+  <script src="js/main-nav.js"></script>
 </body>
 
 </html>

@@ -45,6 +45,20 @@
   }
 }
 
+.page-footer__social-media svg {
+  fill: #666666;
+}
+
+.page-footer__social-media svg:hover {
+  fill: #68b738;
+  // stroke: #68b738;
+}
+
+.page-footer__icon--fb:hover {
+  fill: none;
+  stroke: #68b738;
+}
+
 .page-footer__item {
   margin: 0 18px;
 }
@@ -59,6 +73,19 @@
   @media (min-width: $tablet-width) {
     justify-content: stretch;
   }
+}
+
+.page-footer__copyright--logo {
+  fill: #666666;
+}
+
+.page-footer__copyright:hover .page-footer__copyright--logo {
+  fill: #68b738;
+}
+
+.page-footer__copyright:focus {
+  fill: #68b738;
+  opacity: 0.3;
 }
 
 .page-footer__copyright--text {

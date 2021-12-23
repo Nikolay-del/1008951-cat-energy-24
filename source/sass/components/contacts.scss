@@ -71,23 +71,63 @@
 }
 
 .contacts__input {
+  position: relative;
   flex-grow: 1;
   padding: 13px 0;
   border: 1px solid #e7e7e7;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
+  padding-left: 10px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding: 10px 0;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    padding-left: 20px;
   }
 
-  &::placeholder {
-    padding-left: 10px;
+  &:hover {
+    border-color: #cdcdcd;
+  }
 
-    @media (min-width: $tablet-width) {
-      padding-left: 20px;
-    }
+  &:focus {
+    outline: none;
+    border: 2px solid $dark-gray;
+  }
+
+  &:invalid {
+    outline: none;
+    border: 2px solid #ff8282;
+  }
+}
+
+.contacts__input--email {
+  background: url("../img/icon-email.svg") no-repeat;
+  background-position: right 13px center;
+
+  &:focus {
+    background: url("../img/icon-email-focus.svg") no-repeat;
+    background-position: right 13px center;
+  }
+
+  &:invalid {
+    background: url("../img/icon-email-invalid.svg") no-repeat;
+    background-position: right 13px center;
+  }
+}
+
+.contacts__input--phone {
+  background: url("../img/icon-phone.svg") no-repeat;
+  background-position: right 13px center;
+
+  &:focus {
+    background: url("../img/icon-phone-focus.svg") no-repeat;
+    background-position: right 13px center;
+  }
+
+  &:invalid {
+    background: url("../img/icon-phone-invalid.svg") no-repeat;
+    background-position: right 13px center;
   }
 }

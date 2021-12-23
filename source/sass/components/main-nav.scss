@@ -1,15 +1,40 @@
+.main-nav__container {
+  position: absolute;
+  left: 0;
+  top: 64px;
+  z-index: 10;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    width: auto;
+  }
+}
+
 .main-nav__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
   display: none;
+  flex-direction: column;
+  text-align: center;
+  color: $black;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
 
   @media (min-width: $tablet-width) {
+    color: $black;
+    position: static;
     display: flex;
     text-transform: uppercase;
     font-size: 18px;
     line-height: 24px;
     margin: 0 -17px;
+    flex-direction: row;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -18,10 +43,12 @@
   }
 }
 
-.main-nav__toogle {
+.main-nav__toggle {
   margin: 0;
   padding: 0;
-  background: none;
+  background: url("../img/icon-toogle.svg") no-repeat;
+  width: 24px;
+  height: 19px;
   border: 0;
 
   @media (min-width: $tablet-width) {
@@ -29,31 +56,84 @@
   }
 }
 
+.main-nav--opened .main-nav__toggle {
+  outline: none;
+  width: 19px;
+  height: 20px;
+  background: url("../img/icon-close.svg") no-repeat;
+}
+
+.main-nav--opened .main-nav__list {
+  display: flex;
+}
+
+.main-nav--nojs .main-nav__list {
+  display: flex;
+}
+
 .main-nav__item {
+  border-bottom: 1px solid #e6e6e6;
+  background: $white;
+
   @media (min-width: $tablet-width) {
     margin: 0 17px;
+    width: auto;
+    background: none;
+    border: none;
   }
 }
 
 .main-nav__link {
   text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  display: inline-block;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-weight: normal;
+  }
 
   @media (min-width: $desktop-width) {
     color: $white;
+  }
+
+  &:hover {
+    @media (min-width: $tablet-width) {
+      opacity: 0.6;
+    }
+  }
+
+  &:focus {
+    @media (min-width: $tablet-width) {
+      opacity: 0.3;
+    }
   }
 }
 
 .main-nav__link--current {
   @media (min-width: $tablet-width) {
-    text-decoration: underline solid $white;
+    text-decoration: 2px underline solid $green;
     text-underline-offset: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-decoration-color: $white;
   }
 }
 
 .main-nav__link--catalog {
   @media (min-width: $tablet-width) {
     color: $black;
+    font-weight: normal;
     text-decoration-color: $green;
   }
+}
+
+.main-nav--closed .main-nav__toggle {
+  background: url("../img/icon-toogle.svg") no-repeat;
+  width: 24px;
+  height: 19px;
 }
