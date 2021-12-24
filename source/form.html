@@ -110,8 +110,8 @@
   </header>
   <main class="page-main">
     <secton class="selection">
-      <div class="container">
-        <form class="selection__form" id="selection" action="http://echo.htmlacademy.ru" method="post">
+      <form class="selection__form" id="selection" action="http://echo.htmlacademy.ru" method="post">
+        <div class="container">
           <h1 class="selection__heading">Подбор программы</h1>
           <p class="selection__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           <div class="selection__wrapper">
@@ -159,7 +159,9 @@
               </li>
             </ul>
           </div>
-          <section class="contacts">
+        </div>
+        <section class="contacts">
+          <div class="container">
             <h2 class="contacts__heading">Контактные данные (владельца кота)</h2>
             <ul class="contacts__list">
               <li class="contacts__item">
@@ -173,13 +175,17 @@
                   placeholder="8 (960) 900-60-90" required>
               </li>
             </ul>
-          </section>
-          <section class="comment">
+          </div>
+        </section>
+        <section class="comment">
+          <div class="container">
             <h2 class="comment__heading">Комментарий</h2>
             <textarea name="comment" id="comment" class="comment__textarea" form="selection"
               placeholder="Расскажите обо всех повадках кота"></textarea>
-          </section>
-          <section class="form-additional">
+          </div>
+        </section>
+        <section class="form-additional">
+          <div class="container">
             <h2 class="form-additional__heading">Дополнительно</h2>
             <ul class="form-additional__list">
               <li class="form-additional__item">
@@ -215,9 +221,9 @@
               <button class="form-additional__button" type="submit">Отправить заявку</button>
               <p class="form-additional__surely">* — Обязательные поля</p>
             </div>
-          </section>
-        </form>
-      </div>
+          </div>
+        </section>
+      </form>
     </secton>
     <section class="cooperation cooperation--color">
       <div class="container">
