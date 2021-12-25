@@ -87,11 +87,13 @@
 
 .catalog__image {
   max-width: 140px;
-  max-height: 112px;
 
   @media (min-width: $tablet-width) {
     max-width: 168px;
-    max-height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+
   }
 }
 
