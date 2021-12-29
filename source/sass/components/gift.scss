@@ -13,6 +13,7 @@
   @media (min-width: $tablet-width) {
     background: url("../img/gift_tablet.jpg") no-repeat;
     flex-direction: row;
+    background-size: 100% auto;
     justify-content: space-between;
     padding-top: 57px;
     padding-bottom: 60px;

@@ -41,6 +41,15 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: start;
+    width: 34px;
+    height: 34px;
+    background: $green;
+    border: 13px solid $white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #cdcdcd, 0 1px 8px rgba(0, 0, 0, 0.16);
   }
 }

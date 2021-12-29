@@ -1,5 +1,4 @@
 .form-additional {
-  overflow: hidden;
   margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
@@ -36,10 +35,17 @@
     background: $green;
     position: absolute;
     z-index: -1;
+  }
 
-    @media (min-width: $tablet-width) {
-      left: -36px;
-    }
+  &::before {
+    content: "";
+    height: 2px;
+    width: 100vw;
+    top: 60%;
+    right: 0;
+    background: $green;
+    position: absolute;
+    z-index: -1;
   }
 
   @media (min-width: $tablet-width) {
@@ -48,7 +54,7 @@
     margin-bottom: 57px;
     padding-left: 36px;
     padding-right: 36px;
-    margin-left: 0;
+    margin-left: -36px;
   }
 
   @media (min-width: $desktop-width) {
