@@ -1,7 +1,7 @@
 .slider {
   display: flex;
   flex-direction: column;
-  // align-items: center;
+  align-items: center;
   @media (min-width: $desktop-width) {
     flex-shrink: 0;
   }
@@ -28,7 +28,7 @@
     }
   }
 
-  &:focus {
+  &:active {
     @media (min-width: $tablet-width) {
       border: none;
     }
@@ -36,15 +36,20 @@
 }
 
 .slider__images {
+  width: 280px;
+  height: 232px;
   margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 25px;
+    width: 592px;
+    height: 511px;
   }
 }
 
 .slider__actions {
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
 }
