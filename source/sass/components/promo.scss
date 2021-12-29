@@ -2,10 +2,14 @@
   position: relative;
   text-align: center;
   margin-bottom: 20px;
-  background: url("../img/promo.jpg") no-repeat;
+  background: url("../img/promo-bg-mobile.jpg") no-repeat;
   background-position: center 0;
   background-size: 100% auto;
   padding-top: 27px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo-bg-mobile@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     background: none;
