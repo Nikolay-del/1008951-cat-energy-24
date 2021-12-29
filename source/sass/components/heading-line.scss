@@ -6,6 +6,16 @@
   padding-left: 20px;
   margin-left: -20px;
 
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    padding-left: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 40px;
+    margin-left: -40px;
+  }
+
   &::after {
     content: "";
     height: 2px;
@@ -17,7 +27,22 @@
     z-index: -1;
 
     @media (min-width: $tablet-width) {
-      left: -36px;
+      right: 0;
+    }
+  }
+
+  &::before {
+    content: "";
+    height: 2px;
+    width: 100vw;
+    top: 60%;
+    right: 0;
+    background: $green;
+    position: absolute;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      // left: 0;
     }
   }
 }

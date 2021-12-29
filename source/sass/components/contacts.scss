@@ -1,5 +1,4 @@
 .contacts {
-  overflow: hidden;
   margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
@@ -40,7 +39,19 @@
 
     @media (min-width: $tablet-width) {
       top: 60%;
-      left: -36px;
+    }
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      height: 2px;
+      width: 100vw;
+      top: 60%;
+      right: 0;
+      background: $green;
+      position: absolute;
+      z-index: -1;
     }
   }
 
@@ -50,9 +61,9 @@
     line-height: 36px;
     margin-top: 71px;
     margin-bottom: 76px;
-    padding-left: 36px;
+    padding-left: 40px;
+    margin-left: -40px;
     padding-right: 36px;
-    margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {

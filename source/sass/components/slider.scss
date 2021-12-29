@@ -84,7 +84,8 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     left: 50%;
-    right: 50%;
+    transform: translateX(-50%);
+    align-items: start;
     width: 34px;
     height: 34px;
     background: $green;
