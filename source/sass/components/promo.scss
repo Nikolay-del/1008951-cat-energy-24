@@ -8,11 +8,9 @@
   padding-top: 27px;
 
   @media (min-width: $tablet-width) {
-    background: url("../img/package-tablet.png") no-repeat;
-    background-size: 709px 609px;
+    background: none;
     margin: 0;
     padding-bottom: 526px;
-    background-position: center 352px;
   }
 
   @media (min-width: $desktop-width) {
@@ -111,6 +109,19 @@
   height: 270px;
 
   @media (min-width: $tablet-width) {
-    display: none;
+    width: 709px;
+    height: 609px;
+    position: absolute;
+    top: 352px;
+    left: 0;
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
+    top: 45px;
+    left: 40%;
+    z-index: 1;
   }
 }
