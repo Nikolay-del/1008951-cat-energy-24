@@ -1,8 +1,8 @@
 .diet {
+  margin: 0 -20px;
+  padding: 0 20px;
   display: grid;
   gap: 25px;
-  margin: 0;
-  padding: 0;
   padding-top: 28px;
   list-style-type: none;
   padding-bottom: 20px;
@@ -11,6 +11,8 @@
   margin-top: 27px;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
     margin-top: 72px;
     border: 1px solid #e7e7e7;
     padding-left: 30px;
@@ -55,7 +57,7 @@
 
   @media (min-width: $tablet-width) {
     width: 40px;
-    background-size: 40px;
+    background-size: 40px 40px;
     height: 40px;
     margin-left: -60px;
   }
@@ -66,7 +68,27 @@
 
   @media (min-width: $tablet-width) {
     width: 40px;
-    background-size: 40px;
+    background-size: 40px 40px;
+    height: 40px;
+  }
+}
+
+.diet__input:focus + .diet__box {
+  background: url("../img/radio-off-focus.svg");
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    background-size: 40px 40px;
+    height: 40px;
+  }
+}
+
+.diet__input:checked:focus + .diet__box {
+  background: url("../img/radio-on-focus.svg");
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    background-size: 40px 40px;
     height: 40px;
   }
 }

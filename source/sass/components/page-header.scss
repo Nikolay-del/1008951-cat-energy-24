@@ -3,6 +3,7 @@
   padding-bottom: 17px;
   background: $white;
   position: relative;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     padding-top: 24px;
@@ -11,6 +12,21 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 53px;
+  }
+}
+
+.page-header--background {
+  &::after {
+    @media (min-width: $desktop-width) {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      width: 720px;
+      height: 694px;
+      right: 0;
+      top: 0;
+      background: url("../img/promo-bg.jpg") no-repeat;
+    }
   }
 }
 

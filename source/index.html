@@ -10,7 +10,7 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header">
+  <header class="page-header page-header--background">
     <div class="page-header__container container">
       <a class="page-header__logo">
         <svg xmlns="http://www.w3.org/2000/svg" width="34" height="38" viewBox="0 0 34 38" fill="none"
@@ -113,7 +113,12 @@
       <div class="promo__container container">
         <h1 class="promo__heading">Функциональное питание для котов</h1>
         <p class="promo__text">Занялся собой? Займись котом!</p>
-        <img src="img/package-mobile.png" alt="Упаковка корма 'Cat Energy Pro'" class="promo__image">
+        <picture>
+          <source media="(min-width: 1260px)" srcset="img/package-desktop.png 1x, img/package-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/package-tablet.png 1x, img/package-tablet@2x.png 2x">
+          <img src="img/package-mobile.png" alt="Упаковка корма 'Cat Energy Pro'" srcset="img/package-mobile@2x.png 2x"
+            width="280" height="270" class="promo__image">
+        </picture>
         <button class="promo__button">Подобрать программу</button>
       </div>
     </section>
@@ -295,15 +300,17 @@
             </p>
           </div>
           <div class="slider">
-            <div class="slider__images">
-              <img src="img/before-mobile.png" alt="Кот до функционального питания 'Cat Energy'"
-                class="slider__images--before" width="280" height="232">
-              <img src="img/after-mobile.png" alt="Кот после функционального питания 'Cat Energy'"
-                class="slider__images--after" width="280" height="232">
-            </div>
+            <picture class="slider__images">
+              <source media="(min-width: 768px)" srcset="img/slider-tablet.png 1x, img/slider-tablet@2x.png 2x">
+              <img src="img/slider-mobile.png" alt="Кот до питания 'Cat Energy Pro'"
+                srcset="img/slider-mobile@2x.png 2x" width="280" height="232">
+            </picture>
             <div class="slider__actions">
               <button class="slider__button slider__button--before" type="button">Было</button>
-              <input type="range" min="1" max="3" id="before--after" class="slider__input">
+              <div class="slider__scale">
+                <div class="slider__bar"></div>
+                <div class="slider__toggle"></div>
+              </div>
               <button class="slider__button slider__button--after" type="button">Стало</button>
             </div>
           </div>

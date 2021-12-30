@@ -4,12 +4,13 @@
   background: #eaeaea;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
-    background: none;
+    background: linear-gradient($white 55%, #eaeaea 45%);
+    padding-bottom: 55px;
   }
 
-  @media (min-width: $tablet-width) {
-    background: $gray;
+  @media (min-width: $desktop-width) {
+    padding-bottom: 65px;
+    background: linear-gradient($white 26%, #eaeaea 0%);
   }
 }
 
@@ -25,6 +26,10 @@
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 63px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 146px;
   }
 }
 
