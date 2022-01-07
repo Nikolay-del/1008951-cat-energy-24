@@ -58,7 +58,7 @@
     border-color: #cdcdcd;
   }
 
-  &:focus {
+  &:active {
     outline: none;
     border: 2px solid $dark-gray;
   }

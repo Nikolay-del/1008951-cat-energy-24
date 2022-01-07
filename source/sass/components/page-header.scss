@@ -15,17 +15,22 @@
   }
 }
 
-.page-header--background {
+.page-header--background .page-header__container {
   &::after {
     @media (min-width: $desktop-width) {
       content: "";
       position: absolute;
       z-index: -1;
-      width: 720px;
+      width: 50%;
       height: 694px;
       right: 0;
       top: 0;
-      background: url("../img/promo-bg.jpg") no-repeat;
+      background: url("../img/promo-bg-desktop.jpg") no-repeat;
+      background-size: cover;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-bg-desktop@2x.jpg");
     }
   }
 }
@@ -45,10 +50,7 @@
 }
 
 .page-header__logo {
-  display: flex;
   width: 191px;
-  justify-content: space-between;
-  align-items: center;
 
   @media (min-width: $tablet-width) {
     width: 174px;

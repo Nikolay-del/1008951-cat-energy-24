@@ -106,7 +106,7 @@
     }
   }
 
-  &:focus {
+  &:active {
     @media (min-width: $tablet-width) {
       opacity: 0.3;
     }
