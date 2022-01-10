@@ -50,10 +50,7 @@
 }
 
 .page-header__logo {
-  display: flex;
   width: 191px;
-  justify-content: space-between;
-  align-items: center;
 
   @media (min-width: $tablet-width) {
     width: 174px;
