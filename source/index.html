@@ -10,6 +10,10 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="favicons/apple.png">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff" as="font">
   <title>Главная страница. Cat Energy</title>
 </head>
 
@@ -65,7 +69,7 @@
         <h2 class="visually-hidden">Выбор рациона питания</h2>
         <ul class="program__list">
           <li class="program__item program__item--slimming">
-            <svg class="program__icon program__icon--slimming" viewBox="0 0 50 53">
+            <svg class="program__icon program__icon--slimming" viewBox="0 0 50 53" width="50" height="53">
               <use xlink:href="img/sprite.svg#cat-slim" />
             </svg>
             <h3 class="program__heading">Похудение</h3>
@@ -75,7 +79,7 @@
             <a href="" class="program__link">Каталог Slim</a>
           </li>
           <li class="program__item program__item--weight">
-            <svg viewBox="0 0 67 50" class="program__icon program__icon--weight">
+            <svg viewBox="0 0 67 50" class="program__icon program__icon--weight" width="67" height="50">
               <use xlink:href="img/sprite.svg#cat-weight" />
             </svg>
             <h3 class="program__heading">Набор массы</h3>
