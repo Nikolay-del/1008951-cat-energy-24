@@ -10,6 +10,10 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="favicons/apple.png">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff" as="font">
   <title>Каталог продукции. Cat Energy</title>
 </head>
 
@@ -20,7 +24,7 @@
         <picture>
           <source media="(min-width: 1260px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img src="img/logo-mobile.svg" alt="Логотип 'Cat Energy'" width="191" height="37.61">
+          <img src="img/logo-mobile.svg" alt="Логотип 'Cat Energy'" width="191" height="38">
         </picture>
       </a>
       <nav class="main-nav main-nav--nojs main-nav--closed">
@@ -63,7 +67,7 @@
               width="68" height="86">
           </picture>
           <div class="catalog__wrapper">
-            <h3 class="catalog__name">Cat Energy Pro 500&nbspг</h3>
+            <h3 class="catalog__name">Cat Energy Pro 500&nbsp;г</h3>
             <table class="catalog__table">
               <tr class="catalog__tr">
                 <td class="catalog__td">Масса</td>
@@ -88,7 +92,7 @@
             <source media="(min-width: 768px)" type="image/webp"
               srcset="img/products/chicken-1000g-tablet.webp 1x, img/products/chicken-1000g-tablet@2x.webp 2x">
             <source type="image/webp"
-              srcset="img/products/chicken-1000g-tablet.webp 1x, img/products/chicken-1000g-tablet@2x.webp 2x">
+              srcset="img/products/chicken-1000g-mobile.webp 1x, img/products/chicken-1000g-mobile@2x.webp 2x">
             <source media="(min-width: 1260px)"
               srcset="img/products/chicken-1000g-desktop.png 1x, img/products/chicken-1000g-desktop@2x.png 2x">
             <source media="(min-width: 768px)"
@@ -99,7 +103,7 @@
               height="109">
           </picture>
           <div class="catalog__wrapper">
-            <h3 class="catalog__name">Cat Energy Pro 1000&nbspг</h3>
+            <h3 class="catalog__name">Cat Energy Pro 1000&nbsp;г</h3>
             <table class="catalog__table">
               <tr class="catalog__tr">
                 <td class="catalog__td">Масса</td>
@@ -134,7 +138,7 @@
               height="78">
           </picture>
           <div class="catalog__wrapper">
-            <h3 class="catalog__name">Cat Energy Pro 500&nbspг</h3>
+            <h3 class="catalog__name">Cat Energy Pro 500&nbsp;г</h3>
             <table class="catalog__table">
               <tr class="catalog__tr">
                 <td class="catalog__td">Масса</td>
@@ -169,7 +173,7 @@
               srcset="img/products/fish-1000g-mobile@2x.png 2x" width="84" height="101">
           </picture>
           <div class="catalog__wrapper">
-            <h3 class="catalog__name">Cat Energy Pro 1000&nbspг</h3>
+            <h3 class="catalog__name">Cat Energy Pro 1000&nbsp;г</h3>
             <table class="catalog__table">
               <tr class="catalog__tr">
                 <td class="catalog__td">Масса</td>
@@ -187,7 +191,7 @@
           </div>
           <button type="button" class="catalog__button">Заказать</button>
         </li>
-        <div class="catalog__product">
+        <li class="catalog__product">
           <picture class="catalog__picture">
             <source media="(min-width: 1260px)" type="image/webp"
               srcset="img/products/buckwheat-500g-desktop.webp 1x, img/products/buckwheat-500g-desktop@2x.webp 2x">
@@ -205,7 +209,7 @@
               width="80" height="101">
           </picture>
           <div class="catalog__wrapper">
-            <h3 class="catalog__name">Cat Energy Slim 500&nbspг</h3>
+            <h3 class="catalog__name">Cat Energy Slim 500&nbsp;г</h3>
             <table class="catalog__table">
               <tr class="catalog__tr">
                 <td class="catalog__td">Масса</td>
@@ -222,7 +226,7 @@
             </table>
           </div>
           <button type="button" class="catalog__button">Заказать</button>
-        </div>
+        </li>
         <li class="catalog__product">
           <picture class="catalog__picture">
             <source media="(min-width: 1260px)" type="image/webp"
@@ -240,7 +244,7 @@
               srcset="img/products/buckwheat-1000g-mobile@2x.png 2x" width="84" height="100">
           </picture>
           <div class="catalog__wrapper">
-            <h3 class="catalog__name">Cat Energy Slim 1000&nbspг</h3>
+            <h3 class="catalog__name">Cat Energy Slim 1000&nbsp;г</h3>
             <table class="catalog__table">
               <tr class="catalog__tr">
                 <td class="catalog__td">Масса</td>
@@ -275,7 +279,7 @@
               height="84">
           </picture>
           <div class="catalog__wrapper">
-            <h3 class="catalog__name">Cat Energy Slim 500&nbspг</h3>
+            <h3 class="catalog__name">Cat Energy Slim 500&nbsp;г</h3>
             <table class="catalog__table">
               <tr class="catalog__tr">
                 <td class="catalog__td">Масса</td>
@@ -298,7 +302,7 @@
             <svg width="60" height="60" viewBox="0 0 60 60" class="catalog__svg">
               <use xlink:href="img/sprite.svg#icon-plus" />
             </svg>
-            <h3 class="catalog__name--more">Показать еще 100500&nbspтоваров</h3>
+            <h3 class="catalog__name--more">Показать еще 100500&nbsp;товаров</h3>
             <p class="catalog__text">На самом деле вкусов гораздо больше!</p>
             <button type="button" class="catalog__button--more">Показать все</button>
           </div>
@@ -364,7 +368,7 @@
     <section class="cooperation cooperation--color">
       <div class="container">
         <div class="cooperation__container">
-          <h3 class="cooperation__heading">Приглашаем <br>к&nbsp;сотрудничеству <br> дилеров!</h3>
+          <h3 class="cooperation__heading">Приглашаем <br>к&nbsp;;сотрудничеству <br> дилеров!</h3>
           <div class="cooperation__address">
             <p class="cooperation__address--street">ул. Большая Конюшенная, д. 19/8</p>
             <p class="cooperation__address--city">Санкт-Петербург</p>

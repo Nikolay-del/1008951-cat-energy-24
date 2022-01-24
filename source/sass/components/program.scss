@@ -30,14 +30,14 @@
 .program__item {
   position: relative;
   background: $gray;
-  padding: 30px 20px 18px 20px;
+  padding: 30px 20px 22px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 316px 53px 53px;
+    padding: 80px 315px 56px 53px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 77px 51px 55px 52px;
+    padding: 77px 51px 60px 52px;
   }
 }
 
@@ -74,7 +74,7 @@
     width: 268px;
     height: 200px;
     left: auto;
-    top: 70px;
+    top: 94px;
     right: 28px;
   }
 
@@ -99,13 +99,13 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    margin-bottom: 24px;
+    margin-bottom: 26px;
     font-size: 36px;
     line-height: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 73px;
+    margin-bottom: 78px;
     margin-left: 162px;
   }
 }
@@ -124,11 +124,11 @@
     color: $black;
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 48px;
+    margin-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 23px;
+    margin-bottom: 26px;
   }
 }
 
@@ -137,7 +137,7 @@
   color: $black;
   display: block;
   border-top: 1px solid #d9d9d9;
-  padding-top: 15px;
+  padding-top: 20px;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
@@ -145,6 +145,7 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+    padding: 0;
     font-size: 20px;
     line-height: 30px;
   }
@@ -156,11 +157,11 @@
     height: 12px;
     background: url("../img/icon-arrow.svg") no-repeat;
     left: 100px;
-    top: 17px;
+    top: 22px;
 
     @media (min-width: $tablet-width) {
-      left: 135px;
-      top: 23px;
+      left: 133px;
+      top: 9px;
     }
   }
 

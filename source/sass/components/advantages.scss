@@ -2,13 +2,14 @@
   margin-bottom: 50px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 104px;
+    padding-bottom: 105px;
     border-bottom: 1px solid #e6e6e6;
     margin-bottom: 43px;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 83px;
+    margin: 0;
     border: none;
   }
 }
@@ -16,7 +17,7 @@
 .advantages__heading {
   margin: 0;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
   font-weight: normal;
   font-size: 36px;
   line-height: 40px;
@@ -38,12 +39,13 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 182px;
+    column-gap: 62px;
+    row-gap: 134px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 123px;
+    gap: 80px;
   }
 }
 
@@ -69,23 +71,23 @@
   @media (min-width: $tablet-width) {
     content: "1";
     top: -39px;
-    right: 13%;
+    right: 30%;
   }
 
   @media (min-width: $desktop-width) {
-    right: -8%;
+    right: 7%;
   }
 }
 
 .advantages__item--two::before {
   @media (min-width: $tablet-width) {
     content: "2";
-    top: -37px;
-    right: 7%;
+    top: -40px;
+    right: 25%;
   }
 
   @media (min-width: $desktop-width) {
-    right: -15%;
+    right: 0;
   }
 }
 
@@ -93,11 +95,11 @@
   @media (min-width: $tablet-width) {
     content: "3";
     top: -37px;
-    right: 5%;
+    right: 24%;
   }
 
   @media (min-width: $desktop-width) {
-    right: -17%;
+    right: 0;
   }
 }
 
@@ -105,11 +107,11 @@
   @media (min-width: $tablet-width) {
     content: "4";
     top: -37px;
-    right: 6%;
+    right: 24%;
   }
 
   @media (min-width: $desktop-width) {
-    right: -15%;
+    right: 0;
   }
 }
 
@@ -125,13 +127,21 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    margin-top: 31px;
+    margin-top: 32px;
     font-size: 16px;
     line-height: 24px;
+    width: 76%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }
 
 .advantages__image {
+  width: 60px;
+  height: 60px;
+
   @media (min-width: $tablet-width) {
     width: 80px;
     height: 80px;

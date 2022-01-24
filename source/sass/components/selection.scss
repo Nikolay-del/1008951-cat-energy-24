@@ -6,7 +6,7 @@
   margin-top: 27px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 64px;
+    margin-top: 53px;
     padding-left: 40px;
   }
 
@@ -49,12 +49,16 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    width: 83%;
+    width: 50%;
     margin-bottom: 66px;
   }
 }
 
 .selection__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 94%;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;

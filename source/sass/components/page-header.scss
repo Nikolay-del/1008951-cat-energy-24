@@ -1,17 +1,18 @@
 .page-header {
   padding-top: 10px;
-  padding-bottom: 17px;
+  padding-bottom: 13px;
   background: $white;
   position: relative;
   z-index: 1;
 
   @media (min-width: $tablet-width) {
-    padding-top: 24px;
+    padding-top: 19px;
     background: none;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 53px;
+    padding-top: 47px;
   }
 }
 
@@ -26,6 +27,7 @@
       right: 0;
       top: 0;
       background: url("../img/promo-bg-desktop.jpg") no-repeat;
+      background-color: $green;
       background-size: cover;
     }
 

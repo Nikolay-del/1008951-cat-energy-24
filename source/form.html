@@ -10,6 +10,10 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="favicons/apple.png">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff" as="font">
   <title>Подбор программы. Cat Energy</title>
 </head>
 
@@ -20,7 +24,7 @@
         <picture>
           <source media="(min-width: 1260px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img src="img/logo-mobile.svg" alt="Логотип 'Cat Energy'" width="191" height="37.61">
+          <img src="img/logo-mobile.svg" alt="Логотип 'Cat Energy'" width="191" height="38">
         </picture>
       </a>
       <nav class="main-nav main-nav--nojs main-nav--closed">
@@ -169,7 +173,7 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__container container">
-      <a href="index.html" class="page-footer__logo">
+      <a class="page-footer__logo" href="index.html">
         <img src="img/logo-footer.svg" alt="Логотип 'Cat Energy'" width="128" height="24">
       </a>
       <ul class="page-footer__social-media">
@@ -193,7 +197,7 @@
           <a href="#" class="page-footer__link">
             <span class="visually-hidden">Facebook</span>
             <svg width="22" height="22" viewBox="0 0 22 22" class="page-footer__icon--fb" fill="none">
-              <use xlink:href="img/sprite.svg#icon_facebook"/>
+              <use xlink:href="img/sprite.svg#icon_facebook" />
             </svg>
 
           </a>
