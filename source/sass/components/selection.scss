@@ -11,7 +11,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 73px;
+    margin-top: 66px;
     padding-left: 0;
   }
 }
@@ -52,6 +52,10 @@
     width: 50%;
     margin-bottom: 66px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 27%;
+  }
 }
 
 .selection__wrapper {
@@ -63,6 +67,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
-    margin-bottom: 69px;
+    width: 100%;
   }
 }

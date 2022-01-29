@@ -60,6 +60,7 @@
   @media (min-width: $desktop-width) {
     padding-left: 40px;
     margin-left: -40px;
+    margin-bottom: 63px;
   }
 }
 
@@ -72,15 +73,15 @@
   margin-bottom: 42px;
 
   @media (min-width: $tablet-width) {
-    gap: 32px 132px;
+    gap: 46px 125px;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 54px;
+    margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 80px;
-    margin-bottom: 61px;
+    margin-bottom: 67px;
   }
 }
 
@@ -166,13 +167,15 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     font-size: 20px;
-    width: 43%;
+    width: 50%;
     margin-right: 61px;
+    padding: 15px 0;
   }
 
   @media (min-width: $desktop-width) {
-    width: 40%;
-    margin-right: 81px;
+    width: 47%;
+    margin-right: 77px;
+    padding: 16px 0;
   }
 }
 
@@ -206,5 +209,6 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    align-items: center;
   }
 }

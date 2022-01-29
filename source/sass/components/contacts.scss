@@ -59,7 +59,7 @@
     width: auto;
     font-size: 36px;
     line-height: 36px;
-    margin-top: 71px;
+    margin-top: 76px;
     margin-bottom: 76px;
     padding-left: 40px;
     margin-left: -40px;
@@ -69,6 +69,7 @@
   @media (min-width: $desktop-width) {
     padding-left: 40px;
     margin-left: -40px;
+    margin-top: 64px;
   }
 }
 
@@ -80,11 +81,14 @@
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
+    width: 94%;
     gap: 20px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 76px;
   }
 }
 

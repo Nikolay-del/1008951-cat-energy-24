@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 62px;
+  }
 }
 
 .comment__heading {
@@ -73,6 +77,14 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    width: 94%;
     height: 174px;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }

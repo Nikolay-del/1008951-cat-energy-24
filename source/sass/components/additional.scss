@@ -5,7 +5,7 @@
 .additional__heading {
   margin: 0;
   padding: 0;
-  margin-top: 25px;
+  margin-top: 32px;
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
@@ -13,7 +13,8 @@
   margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 68px;
+    padding-right: 35px;
+    margin-top: 71px;
     margin-bottom: 80px;
     font-size: 36px;
     line-height: 36px;
@@ -35,9 +36,13 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
+    border: 1px solid #cdcdcd;
     margin-bottom: 69px;
   }
 
@@ -48,7 +53,7 @@
 
 .additional__item {
   width: 100%;
-  padding-top: 13px;
+  padding-top: 10px;
   padding-bottom: 19px;
   border-bottom: 1px solid #cdcdcd;
 
@@ -56,6 +61,7 @@
     padding-bottom: 28px;
     padding-top: 26px;
     display: flex;
+    width: 89%;
     flex-direction: column;
   }
 
@@ -69,10 +75,12 @@
 .additional__options {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
+    align-items: center;
     margin: 0;
+    margin-top: 3px;
   }
 
   @media (min-width: $desktop-width) {
@@ -134,9 +142,13 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  padding: 10px 0;
+  padding: 12px 0;
   width: 100%;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 0;
+  }
 
   @media (min-width: $desktop-width) {
     width: 20%;
