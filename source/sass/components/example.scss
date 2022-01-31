@@ -51,7 +51,7 @@
     margin-bottom: 71px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 85px;
     width: auto;
   }
@@ -162,7 +162,7 @@
   width: 77px;
 
   @media (min-width: $tablet-width) {
-    width: 80%;
+    width: 100%;
     font-size: 14px;
     line-height: 14px;
   }
