@@ -83,7 +83,7 @@
   }
 }
 
-.page-footer__icon--fb {
+.page-footer__icon-fb {
   stroke: #666666;
 
   @media (min-width: $tablet-width) {
@@ -92,11 +92,11 @@
   }
 }
 
-.page-footer__icon--fb:hover {
+.page-footer__icon-fb:hover {
   stroke: #68b738;
 }
 
-.page-footer__icon--fb:active {
+.page-footer__icon-fb:active {
   opacity: 0.3;
 }
 
@@ -122,7 +122,7 @@
   }
 }
 
-.page-footer__copyright--logo {
+.page-footer__copyright-logo {
   fill: #666666;
 }
 
@@ -135,7 +135,7 @@
   opacity: 0.3;
 }
 
-.page-footer__copyright--text {
+.page-footer__copyright-text {
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;

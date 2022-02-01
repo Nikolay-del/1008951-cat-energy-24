@@ -35,9 +35,11 @@
     margin: 0 -17px;
     flex-direction: row;
     border: none;
+    flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
+    width: 512px;
     font-size: 20px;
     line-height: 30px;
   }

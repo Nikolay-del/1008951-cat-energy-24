@@ -153,6 +153,9 @@
   padding: 12px 0;
   width: 100%;
   color: $white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
     padding: 11px 0;
